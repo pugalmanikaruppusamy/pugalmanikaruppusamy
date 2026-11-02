@@ -1,0 +1,161 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080314"/>
+      <stop offset=".45" stop-color="#1b073d"/>
+      <stop offset="1" stop-color="#09051c"/>
+    </linearGradient>
+
+    <radialGradient id="purpleGlow">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#7c3aed" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="metal" x1="0" y1="0" x2=".2" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".18" stop-color="#e9d5ff"/>
+      <stop offset=".38" stop-color="#a855f7"/>
+      <stop offset=".55" stop-color="#f5eaff"/>
+      <stop offset=".76" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#e9d5ff"/>
+    </linearGradient>
+
+    <linearGradient id="textMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".3" stop-color="#e9d5ff"/>
+      <stop offset=".55" stop-color="#c084fc"/>
+      <stop offset=".8" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#f5d0fe"/>
+    </linearGradient>
+
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#d8b4fe" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="neon" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="blur"/>
+      <feOffset dy="9" dx="5" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".65"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="shineClip">
+      <rect x="0" y="0" width="1000" height="420" rx="25"/>
+    </clipPath>
+  </defs>
+
+  <!-- Deep cosmic background -->
+  <rect width="1000" height="420" rx="25" fill="url(#background)"/>
+
+  <circle cx="500" cy="150" r="280" fill="url(#purpleGlow)"/>
+  <circle cx="120" cy="300" r="160" fill="url(#purpleGlow)"/>
+  <circle cx="880" cy="90" r="170" fill="url(#purpleGlow)"/>
+
+  <!-- Ambient stars -->
+  <g fill="#e9d5ff">
+    <circle cx="100" cy="80" r="2"/>
+    <circle cx="210" cy="140" r="1.5"/>
+    <circle cx="830" cy="60" r="2"/>
+    <circle cx="910" cy="250" r="1.5"/>
+    <circle cx="150" cy="340" r="2"/>
+    <circle cx="770" cy="330" r="2"/>
+    <circle cx="680" cy="65" r="1.5"/>
+    <circle cx="360" cy="80" r="1"/>
+    <circle cx="560" cy="350" r="1.5"/>
+  </g>
+
+  <!-- Glass emblem -->
+  <circle cx="500" cy="155" r="112"
+    fill="#7c3aed" fill-opacity=".09"
+    stroke="#d8b4fe" stroke-opacity=".55" stroke-width="2"/>
+
+  <circle cx="500" cy="155" r="98"
+    fill="none" stroke="#a855f7"
+    stroke-opacity=".45" stroke-width="1.5"/>
+
+  <!-- Rotating neon orbit -->
+  <g transform="translate(500 155)" filter="url(#neon)">
+    <ellipse rx="143" ry="48"
+      fill="none" stroke="#c084fc" stroke-width="3">
+      <animateTransform attributeName="transform"
+        type="rotate" from="0" to="360"
+        dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="143" ry="48"
+      fill="none" stroke="#f0abfc" stroke-width="2"
+      transform="rotate(65)">
+      <animateTransform attributeName="transform"
+        type="rotate" from="360" to="0"
+        dur="13s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <circle cx="643" cy="155" r="8" fill="#ffffff" filter="url(#neon)">
+    <animate attributeName="opacity"
+      values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 3D PK depth layers -->
+  <g text-anchor="middle" font-family="Arial,sans-serif"
+     font-weight="900" font-size="112" letter-spacing="-12">
+
+    <text x="504" y="194" fill="#31065c">PK</text>
+    <text x="502" y="190" fill="#54118b">PK</text>
+    <text x="500" y="184" fill="url(#metal)"
+      stroke="#f5d0fe" stroke-width="1.5"
+      filter="url(#shadow)">PK</text>
+  </g>
+
+  <!-- Metallic brand name -->
+  <text x="500" y="322" text-anchor="middle"
+    font-family="Arial,sans-serif" font-size="66"
+    font-weight="900" letter-spacing="8"
+    fill="#3b0764">PUGALMANI</text>
+
+  <text x="500" y="313" text-anchor="middle"
+    font-family="Arial,sans-serif" font-size="66"
+    font-weight="900" letter-spacing="8"
+    fill="url(#textMetal)" filter="url(#neon)">PUGALMANI</text>
+
+  <!-- Moving light sweep -->
+  <g clip-path="url(#shineClip)">
+    <rect x="-260" y="0" width="170" height="420"
+      fill="url(#shine)" opacity=".65"
+      transform="skewX(-18)">
+      <animate attributeName="x"
+        from="-260" to="1200"
+        dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tagline -->
+  <text x="500" y="365" text-anchor="middle"
+    font-family="Arial,sans-serif" font-size="17"
+    font-weight="600" letter-spacing="7"
+    fill="#e9d5ff">
+    DEVELOPER • DESIGNER • INNOVATOR
+  </text>
+
+  <text x="500" y="395" text-anchor="middle"
+    font-family="Arial,sans-serif" font-size="10"
+    letter-spacing="4" fill="#a78bfa">
+    BUILDING DIGITAL EXPERIENCES
+  </text>
+</svg>
