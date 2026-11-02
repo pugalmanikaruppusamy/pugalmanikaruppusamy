@@ -1,6 +1,14 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/pugalmanikaruppusamy/pugalmanikaruppusamy/main/assets/cosmos-hero.svg" width="100%" alt="Pugalmani K — Digital Cosmos"/>
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/pugalmanikaruppusamy/pugalmanikaruppusamy/main/assets/cosmos-logo.svg"
+    width="100%"
+    alt="Pugalmani 3D Purple Logo"
+  />
+</div>
+
 
 <a href="https://github.com/pugalmanikaruppusamy">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=19&duration=2600&pause=900&color=C4B5FD&center=true&vCenter=true&repeat=true&width=760&height=48&lines=UI%2FUX+DEVELOPER;MERN+STACK+DEVELOPER;JAVA+%7C+PYTHON+%7C+JAVASCRIPT;BUILDING+IDEAS+INTO+REALITY" alt="Animated developer titles"/>
