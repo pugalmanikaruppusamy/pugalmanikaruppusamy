@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Pugalmani K — Digital Cosmos</title><desc id="desc">A cinematic violet and blue digital universe with a chrome-inspired name treatment.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#070512"/><stop offset=".48" stop-color="#151038"/><stop offset="1" stop-color="#06182d"/></linearGradient>
+ <radialGradient id="neb"><stop stop-color="#7547c9" stop-opacity=".62"/><stop offset=".55" stop-color="#39206f" stop-opacity=".23"/><stop offset="1" stop-color="#090817" stop-opacity="0"/></radialGradient>
+ <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".18" stop-color="#a9b6d5"/><stop offset=".34" stop-color="#fff"/><stop offset=".53" stop-color="#7785aa"/><stop offset=".72" stop-color="#f5f7ff"/><stop offset="1" stop-color="#8996c5"/></linearGradient>
+ <linearGradient id="line" x1="0" x2="1"><stop stop-color="#8b5cf6" stop-opacity="0"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect width="1200" height="430" rx="24" fill="url(#bg)"/>
+<ellipse cx="870" cy="200" rx="420" ry="300" fill="url(#neb)"/>
+<ellipse cx="300" cy="20" rx="350" ry="190" fill="#462b91" opacity=".2" filter="url(#soft)"/>
+<!-- orbital geometry -->
+<g fill="none" stroke-linecap="round">
+ <ellipse cx="900" cy="210" rx="245" ry="92" stroke="#9b83ff" stroke-opacity=".52" stroke-width="2" transform="rotate(-23 900 210)"/>
+ <ellipse cx="900" cy="210" rx="290" ry="128" stroke="#54c9ff" stroke-opacity=".24" stroke-width="1.5" transform="rotate(29 900 210)"/>
+ <ellipse cx="900" cy="210" rx="190" ry="160" stroke="#b7a3ff" stroke-opacity=".18" stroke-width="1" transform="rotate(62 900 210)"/>
+ <path d="M610 210H1180" stroke="url(#line)" stroke-width="1"/>
+</g>
+<circle cx="900" cy="210" r="105" fill="#7c3aed" opacity=".16" filter="url(#soft)"/>
+<circle cx="900" cy="210" r="77" fill="#151039" stroke="#b49aff" stroke-opacity=".75" stroke-width="2"/>
+<circle cx="900" cy="210" r="63" fill="none" stroke="#5bd5ff" stroke-opacity=".75" stroke-width="1.5" stroke-dasharray="3 9"/>
+<circle cx="900" cy="210" r="48" fill="url(#neb)" stroke="#8e7cff" stroke-opacity=".6"/>
+<path d="M875 210h50M900 185v50" stroke="#c4b5fd" stroke-opacity=".55"/>
+<g fill="#fff" filter="url(#glow)"><circle cx="665" cy="126" r="2"/><circle cx="1084" cy="103" r="2.2"/><circle cx="1040" cy="315" r="1.8"/><circle cx="755" cy="340" r="1.5"/><circle cx="1134" cy="235" r="1.6"/><circle cx="615" cy="270" r="1.5"/></g>
+<!-- glass shards -->
+<g fill="#8b5cf6" fill-opacity=".12" stroke="#b9a5ff" stroke-opacity=".55">
+ <path d="M1090 42l31 18-7 38-31-18z"/><path d="M1080 328l28-16 22 25-28 17z"/>
+ <path d="M735 64l21-12 18 23-21 13z" fill="#38bdf8" fill-opacity=".1"/>
+</g>
+<g fill="#dce7ff" opacity=".75"><circle cx="48" cy="55" r="1.4"/><circle cx="120" cy="115" r="1"/><circle cx="550" cy="65" r="1.3"/><circle cx="490" cy="350" r="1.2"/><circle cx="1150" cy="370" r="1.4"/><circle cx="70" cy="340" r="1.1"/></g>
+<text x="76" y="112" fill="#9f8bff" font-family="Arial,sans-serif" font-size="14" letter-spacing="5">WELCOME TO MY DIGITAL COSMOS</text>
+<text x="72" y="205" fill="url(#chrome)" stroke="#ffffff" stroke-opacity=".28" stroke-width=".7" font-family="Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="1">PUGALMANI</text>
+<text x="78" y="252" fill="#d8d5f2" font-family="Arial,sans-serif" font-size="23" letter-spacing="7">K  /  DEVELOPER</text>
+<rect x="78" y="284" width="390" height="2" rx="1" fill="url(#line)"/>
+<text x="78" y="322" fill="#b9b4d8" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">UI/UX  •  MERN STACK  •  JAVA  •  PYTHON</text>
+<text x="78" y="374" fill="#7f77a8" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">DESIGN WITH PURPOSE  /  BUILD WITH PASSION</text>
+</svg>

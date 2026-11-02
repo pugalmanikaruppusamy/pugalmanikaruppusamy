@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+<defs><linearGradient id="f" x2="1"><stop stop-color="#080615"/><stop offset=".5" stop-color="#21134A"/><stop offset="1" stop-color="#071B2C"/></linearGradient><linearGradient id="s"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs>
+<rect width="1200" height="180" rx="18" fill="url(#f)"/>
+<g fill="none" stroke="url(#s)" opacity=".65"><ellipse cx="600" cy="90" rx="390" ry="60" stroke-width="1.4"/><ellipse cx="600" cy="90" rx="300" ry="43" transform="rotate(-12 600 90)"/><ellipse cx="600" cy="90" rx="220" ry="30" transform="rotate(15 600 90)"/></g>
+<circle cx="600" cy="90" r="35" fill="#7C3AED" opacity=".25"/><circle cx="600" cy="90" r="22" fill="#15102F" stroke="#BBA7FF" stroke-width="1.5"/><circle cx="600" cy="90" r="6" fill="#8BDFFF"/>
+<g fill="#D9D3FF"><circle cx="195" cy="65" r="2"/><circle cx="990" cy="120" r="2"/><circle cx="830" cy="35" r="1.5"/><circle cx="340" cy="140" r="1.5"/></g>
+<text x="600" y="160" text-anchor="middle" fill="#C7BDF0" font-family="Arial,sans-serif" font-size="11" letter-spacing="5">ENDLESS CURIOSITY  •  INFINITE POSSIBILITIES</text>
+</svg>
