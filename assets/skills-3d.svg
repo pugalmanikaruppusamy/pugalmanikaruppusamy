@@ -1,0 +1,154 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="430" viewBox="0 0 1000 430">
+<defs>
+  <radialGradient id="bg">
+    <stop offset="0" stop-color="#32105b"/>
+    <stop offset=".65" stop-color="#160727"/>
+    <stop offset="1" stop-color="#080310"/>
+  </radialGradient>
+  <linearGradient id="glass" x2="0" y2="1">
+    <stop stop-color="#d8b4fe" stop-opacity=".2"/>
+    <stop offset="1" stop-color="#7e22ce" stop-opacity=".04"/>
+  </linearGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="7" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<rect width="1000" height="430" rx="25" fill="url(#bg)"/>
+
+<!-- Purple ambient lights -->
+<circle cx="500" cy="210" r="230" fill="#9333ea" opacity=".09"/>
+<circle cx="100" cy="80" r="100" fill="#a855f7" opacity=".08"/>
+<circle cx="900" cy="350" r="130" fill="#c084fc" opacity=".08"/>
+
+<!-- Orbit rings -->
+<ellipse cx="500" cy="210" rx="410" ry="150"
+ fill="none" stroke="#a855f7" stroke-width="2"
+ stroke-opacity=".35" stroke-dasharray="7 12"/>
+<ellipse cx="500" cy="210" rx="330" ry="110"
+ fill="none" stroke="#e879f9" stroke-width="1.5"
+ stroke-opacity=".3"/>
+
+<!-- Floating glass tiles with original tech logos -->
+
+<g>
+  <rect x="75" y="70" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".65"/>
+  <image x="97" y="92" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -16;0 0" dur="3.4s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="225" y="45" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="247" y="67" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 18;0 0" dur="4s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="375" y="75" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".7"/>
+  <image x="397" y="97" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -14;0 0" dur="3.8s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="525" y="45" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="547" y="67" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 16;0 0" dur="3.2s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="675" y="75" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".7"/>
+  <image x="697" y="97" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -17;0 0" dur="4.2s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="825" y="55" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="847" y="77" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 15;0 0" dur="3.6s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="75" y="245" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="97" y="267" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 13;0 0" dur="3.9s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="225" y="275" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".7"/>
+  <image x="247" y="297" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -14;0 0" dur="3.5s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="375" y="245" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="397" y="267" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 16;0 0" dur="4.1s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="525" y="275" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".7"/>
+  <image x="547" y="297" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -15;0 0" dur="3.7s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="675" y="245" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#e879f9" stroke-opacity=".7"/>
+  <image x="697" y="267" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 14;0 0" dur="3.3s" repeatCount="indefinite"/>
+</g>
+
+<g>
+  <rect x="825" y="245" width="105" height="105" rx="23"
+   fill="url(#glass)" stroke="#c084fc" stroke-opacity=".7"/>
+  <image x="847" y="267" width="61" height="61"
+   href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+  <animateTransform attributeName="transform" type="translate"
+   values="0 0;0 -16;0 0" dur="4.3s" repeatCount="indefinite"/>
+</g>
+
+<!-- Purple light particles -->
+<g fill="#f0abfc" filter="url(#glow)">
+  <circle cx="195" cy="210" r="3"/>
+  <circle cx="490" cy="205" r="4"/>
+  <circle cx="805" cy="210" r="3"/>
+  <circle cx="500" cy="395" r="2"/>
+</g>
+</svg>
